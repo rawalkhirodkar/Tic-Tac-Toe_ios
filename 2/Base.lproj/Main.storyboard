@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +15,79 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="bird.gif" translatesAutoresizingMaskIntoConstraints="NO" id="wcO-AY-7aw">
+                                <rect key="frame" x="16" y="92" width="522" height="508"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEc-YJ-ODe">
+                                <rect key="frame" x="67" y="146" width="131" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iAO-sx-FS9">
+                                <rect key="frame" x="206" y="146" width="131" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QbY-XY-1f3">
+                                <rect key="frame" x="206" y="266" width="131" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jC3-pv-gQl">
+                                <rect key="frame" x="345" y="266" width="131" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="geS-Bw-I4d">
+                                <rect key="frame" x="345" y="146" width="131" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y81-F7-gyx">
+                                <rect key="frame" x="206" y="386" width="131" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2PW-mq-DyT">
+                                <rect key="frame" x="67" y="386" width="131" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ozZ-mR-nSa">
+                                <rect key="frame" x="67" y="266" width="131" height="112"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSO-fH-oUD">
+                                <rect key="frame" x="345" y="386" width="131" height="112"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X to play first!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZP-2j-PC0">
+                                <rect key="frame" x="80" y="54" width="157" height="30"/>
+                                <color key="backgroundColor" red="0.98806318709999996" green="0.99640692539999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.2077108989" green="0.34232399009999998" blue="0.85880287249999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.20771089894832417" green="0.34232399011890968" blue="0.85880287247474751" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aao-6l-jzZ">
+                                <rect key="frame" x="392" y="21" width="151" height="102"/>
+                                <state key="normal" title="Reset" image="rst1.jpg">
+                                    <color key="titleColor" red="0.2077108989" green="0.34232399009999998" blue="0.85880287249999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonrst:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jmO-mD-x33"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98806318709999996" green="0.99640692539999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="b1" destination="GEc-YJ-ODe" id="vqe-bM-DFo"/>
+                        <outlet property="b2" destination="iAO-sx-FS9" id="2on-Tp-O1v"/>
+                        <outlet property="b3" destination="geS-Bw-I4d" id="NBh-QJ-7QV"/>
+                        <outlet property="b4" destination="ozZ-mR-nSa" id="a4h-yB-mC5"/>
+                        <outlet property="b5" destination="QbY-XY-1f3" id="FxB-di-xDO"/>
+                        <outlet property="b6" destination="jC3-pv-gQl" id="75k-Q5-Kbm"/>
+                        <outlet property="b7" destination="2PW-mq-DyT" id="P4J-y2-rf4"/>
+                        <outlet property="b8" destination="y81-F7-gyx" id="3vF-kP-tmN"/>
+                        <outlet property="b9" destination="gSO-fH-oUD" id="PmZ-Dr-4Tv"/>
+                        <outlet property="board" destination="wcO-AY-7aw" id="mQB-Wq-1Uo"/>
+                        <outlet property="rst" destination="aao-6l-jzZ" id="eBZ-MS-SkH"/>
+                        <outlet property="turn" destination="aZP-2j-PC0" id="Wi4-oj-h9J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="223" y="371"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bird.gif" width="500" height="517"/>
+        <image name="rst1.jpg" width="102" height="102"/>
+    </resources>
 </document>
