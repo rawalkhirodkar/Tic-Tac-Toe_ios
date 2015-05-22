@@ -14,14 +14,19 @@
 //----------------------------------------------------------------------------------------------------------------------------------------------------
 @implementation ViewController
 
+// '-' is for instance method, '+' is for some class method (Don't know much about '+')
+// [className methodName] // no args
+// [className methodName:Parameter] // args
+
+//Note this function is defined in the parent(super) class (the reason why its not present in the .h file), we are over-riding it.
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad]; // super = superclass, UIViewController in this case
     // Do any additional setup after loading the view, typically from a nib.
-    o_img = [UIImage imageNamed:@"o.png"];
+    o_img = [UIImage imageNamed:@"o.png"]; //imageNamed is a function, arg string
     x_img = [UIImage imageNamed:@"x.png"];
     
     player_num = 1;
-    self.turn.text = @"X to play first!";
+    self.turn.text = @"X to play first!"; // do you remember we have a "turn" object in .h file?
 } // intialize stuff, player 1 is "X" and player 2 is "O"
 
 //--------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -47,23 +52,18 @@
         UIAlertView *won = [[UIAlertView alloc]initWithTitle:@"We have a winner!" message:@"Player 1 wins!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         won.tag = 99;
         [won show];
-        //[self rstBoard];
     } // X won
     
     if(temp == 2){
         UIAlertView *won = [[UIAlertView alloc]initWithTitle:@"We have a winner!" message:@"Player 2 wins!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
          won.tag = 99;
         [won show];
-        //[self rstBoard];
-
     } // O won
     
     if(temp == 3){
         UIAlertView *won = [[UIAlertView alloc]initWithTitle:@"Well its a Draw!" message:@"Try again?" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
          won.tag = 99;
         [won show];
-        //[self rstBoard];
-        
     } // Draw
 
 } // function which updates label which says whose turn to play
@@ -105,6 +105,11 @@
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [[event allTouches] anyObject]; // touch is var which stores the info where the touch occured on the screen
     
+    // frame is an attribute of image object
+    //locationInView is a function,Returns the current location of the receiver in the coordinate system of the given view.
+    //arg The view object in whose coordinate system you want the touch located
+    
+    //Note: locationInView is like an attribute of object touch
     if(CGRectContainsPoint([self.b1 frame], [touch locationInView:self.view])){
         if(self.b1.image == NULL){
             if(player_num == 1){
@@ -285,7 +290,6 @@
     
 }
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-// ok this is not working, make it work!
 
 -(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if(alertView.tag == 99){
